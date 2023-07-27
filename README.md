@@ -1,6 +1,6 @@
-# Prática Conceitos Básicos do Typescript
+# Prática Métodos de Array para Typescript
 
-Este pacote contém a uma série de funções utilitárias, principalmenete para manipulação de arrays e strings. Nenhuma destas funções estão implementadas, apenas assinadas, anotadas com comentários, que explicam sua função, e com testes de unidade implementados, para garantir a correta implementação dos requisitos.
+Este pacote contém a uma série de funções utilitárias, principalmenete para manipulação de arrays. Nenhuma destas funções estão implementadas, apenas assinadas, anotadas com comentários, que explicam sua função, e com testes de unidade implementados, para garantir a correta implementação dos requisitos.
 
 Você deverá implementar cada uma destas funções, de forma que os testes de unidade sejam executados com sucesso. Para isso, você deverá seguir as instruções abaixo.
 
