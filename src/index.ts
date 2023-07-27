@@ -1,4 +1,5 @@
 export * from './arrayClone';
+export * from './extractItemsPaginateArray';
 export * from './findFirstMostFrequent';
 export * from './getRecursiveFactorial';
 export * from './getRecursiveFibonacciSeries';
