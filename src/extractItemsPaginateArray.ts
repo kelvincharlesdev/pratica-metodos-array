@@ -9,6 +9,6 @@ import { Ientrydata, PageItems } from '../types/Ientrydata';
  * @param {Ientrydata} data
  * @return {*}  {PageItems[]}
  */
-const extractItemsPaginateArray = (data: Ientrydata): PageItems[] => {
+export const extractItemsPaginateArray = (data: Ientrydata): PageItems[] => {
   return [];
 };
