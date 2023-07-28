@@ -5,5 +5,7 @@
  * @param {T[]} arr
  */
 export const arrayClone = <T>(arr: T[]): T[] => {
-  return [];
+  const newArray = arr.map(contentArray => contentArray);
+
+  return newArray;
 };
