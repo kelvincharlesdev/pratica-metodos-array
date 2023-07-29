@@ -9,5 +9,11 @@
  * @return {*}  {number}
  */
 export const getRecursiveFactorial = (n: number): number => {
-  return -1;
+  if (n === 0) {
+    return 1;
+  }
+
+  const resultFactorial = n * getRecursiveFactorial(n - 1);
+
+  return resultFactorial;
 };
