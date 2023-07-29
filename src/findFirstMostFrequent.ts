@@ -1,3 +1,5 @@
+import { log } from 'console';
+
 interface MostFrequentType {
   value: string | number;
   occurrences: number;
@@ -15,5 +17,25 @@ interface MostFrequentType {
 export const findFirstMostFrequent = (
   inputArray: Array<string | number>,
 ): MostFrequentType => {
-  return { value: '', occurrences: 0 };
+  const myMap = new Map<string | number, number>();
+
+  for (const item of inputArray) {
+    if (myMap.has(item)) {
+      myMap.set(item, myMap.get(item) + 1);
+    } else {
+      myMap.set(item, 1);
+    }
+  }
+
+  let mostRepeatedItem: string | number;
+  let maxCount = 0;
+
+  for (const [item, count] of myMap.entries()) {
+    if (count > maxCount) {
+      mostRepeatedItem = item;
+      maxCount = count;
+    }
+  }
+
+  return { value: mostRepeatedItem, occurrences: maxCount };
 };
