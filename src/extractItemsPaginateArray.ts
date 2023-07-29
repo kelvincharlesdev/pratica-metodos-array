@@ -10,5 +10,18 @@ import { Ientrydata, PageItems } from '../types/Ientrydata';
  * @return {*}  {PageItems[]}
  */
 export const extractItemsPaginateArray = (data: Ientrydata): PageItems[] => {
-  return [];
+  //passar dentro dos objetos
+  // passar dentro do arrays
+  // passar dentro do 2 objeto
+  // extrair domente  o array de itens
+
+  const { pages } = data;
+  const allValues = [];
+
+  for (const properties of pages) {
+    for (const itemsPages of properties.items) {
+      allValues.push(itemsPages);
+    }
+  }
+  return allValues;
 };
