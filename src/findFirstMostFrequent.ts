@@ -1,5 +1,3 @@
-import { log } from 'console';
-
 interface MostFrequentType {
   value: string | number;
   occurrences: number;
