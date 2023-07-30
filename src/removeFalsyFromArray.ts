@@ -6,5 +6,7 @@
  * @return {*}  {unknown[]}
  */
 export const removeFalsyFromArray = (arr: unknown[]): unknown[] => {
-  return [];
+  const arrayBoolean = arr.filter(Boolean);
+
+  return arrayBoolean;
 };
