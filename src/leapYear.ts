@@ -1,5 +1,3 @@
-import { log } from 'console';
-
 /**
  * https://pt.wikipedia.org/wiki/Ano_bissexto
  * @param startYear start year
