@@ -1,3 +1,5 @@
+import { log } from 'console';
+
 /**
  * nameArrayToString
  * @description
@@ -14,5 +16,15 @@
  * @return {string}
  */
 export const nameArrayToString = (nameArray: string[]) => {
-  return '';
+  let newString = '';
+
+  for (let i = 0; i < nameArray.length; i++) {
+    newString += nameArray[i];
+    if (i < nameArray.length - 2) {
+      newString += ', ';
+    } else if (i === nameArray.length - 2) {
+      newString += ' & ';
+    }
+  }
+  return newString;
 };
